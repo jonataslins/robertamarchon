@@ -1,0 +1,155 @@
+<style>
+:root {
+  /* =========================
+     Espaçamentos
+  ========================= */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* =========================
+     Tipografia
+  ========================= */
+  --text-3xs: 11px;
+  --text-2xs: 12px;
+  --text-xs: 13px;
+  --text-sm: 15px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+
+  --text-h4: 24px;
+  --text-h3: 28px;
+  --text-h2: 36px;
+  --text-h1: 48px;
+
+  --text-quote: 22px;
+
+  /* =========================
+     Altura das linhas
+  ========================= */
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+  --leading-relax: 1.8;
+
+  /* =========================
+     Espaçamento entre letras
+  ========================= */
+  --tracking-flat: 0;
+  --tracking-wide: 0.08em;
+  --tracking-wider: 0.12em;
+  --tracking-caps: 0.18em;
+
+  /* =========================
+     Pesos das fontes
+  ========================= */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* =========================
+     Duração das animações
+  ========================= */
+  --dur-fast: 0.15s;
+  --dur: 0.25s;
+  --dur-slow: 0.4s;
+
+  --ease: ease;
+  --ease-out: ease-out;
+  --ease-in-out: ease-in-out;
+
+  /* =========================
+     Transformações
+  ========================= */
+  --lift: translateY(-2px);
+
+  /* =========================
+     Cores principais
+  ========================= */
+  --white: #ffffff;
+  --cream: #f8f6f2;
+
+  --sage: #7c9b7a;
+  --sage-light: #9ab398;
+  --sage-pale: #edf3eb;
+  --sage-mist: rgba(124, 155, 122, 0.18);
+
+  --earth: #9c7a5f;
+
+  --gold: #d4af37;
+  --whatsapp: #25d366;
+
+  /* =========================
+     Texto
+  ========================= */
+  --ink: #2f2f2f;
+  --ink-mid: #4f4f4f;
+  --ink-soft: #666666;
+
+  --text-strong: #2f2f2f;
+  --text-body: #444444;
+  --text-muted: #777777;
+
+  /* =========================
+     Bordas
+  ========================= */
+  --border: #e5e5e5;
+  --line: #e5e5e5;
+
+  /* =========================
+     Superfícies
+  ========================= */
+  --surface-card: #ffffff;
+  --surface-page: #ffffff;
+  --surface-wash: #f8faf7;
+  --surface-tint: #edf3eb;
+
+  /* =========================
+     Botões e ações
+  ========================= */
+  --action: #7c9b7a;
+  --action-hover: #6d8d6c;
+  --action-text: #ffffff;
+
+  /* =========================
+     Sombras
+  ========================= */
+  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.04);
+
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.06);
+
+  --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  --shadow-wa: 0 8px 25px rgba(37, 211, 102, 0.35);
+
+  /* =========================
+     Bordas arredondadas
+  ========================= */
+  --radius-sm: 2px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 999px;
+
+  /* =========================
+     Fontes
+  ========================= */
+  --font-body: 'Inter', sans-serif;
+  --font-display: 'Cormorant Garamond', serif;
+
+  /* =========================
+     Layout
+  ========================= */
+  --container-width: 1280px;
+  --header-height: 72px;
+}
+</style>

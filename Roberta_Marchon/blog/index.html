@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog de Nutrição | Roberta Marchon Nutricionista</title>
+<meta name="description" content="Artigos científicos sobre emagrecimento, low carb, jejum intermitente, Mounjaro e reeducação alimentar. Nutricionista Roberta Marchon, CRN 4 – 131.006-25." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://www.robertamarchon.com.br/blog/" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Roberta Marchon Nutricionista" />
+<meta property="og:title" content="Blog de Nutrição | Roberta Marchon Nutricionista" />
+<meta property="og:description" content="Artigos científicos sobre emagrecimento, low carb, jejum intermitente, Mounjaro e reeducação alimentar. Nutricionista Roberta Marchon, CRN 4 – 131.006-25." />
+<meta property="og:url" content="https://www.robertamarchon.com.br/blog/" />
+<meta property="og:image" content="https://www.robertamarchon.com.br/assets/hero.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: #fff; color: #2f2f2f; -webkit-font-smoothing: antialiased; }
+:root {
+  --white: #ffffff; --cream: #f8f6f2;
+  --sage: #7c9b7a; --sage-light: #9ab398; --sage-pale: #edf3eb;
+  --earth: #9c7a5f;
+  --ink: #2f2f2f; --ink-mid: #4a4a4a; --ink-soft: #6a6a6a; --ink-muted: #888;
+  --border: #e8e8e4;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.07);
+  --radius-md: 10px; --radius-sm: 3px;
+  --font-body: 'Inter',sans-serif; --font-display: 'Cormorant Garamond',serif;
+}
+/* HEADER */
+header {
+  position: sticky; top: 0; z-index: 100;
+  height: 84px; display: flex; align-items: center; justify-content: space-between;
+  padding: 0 6vw;
+  background: rgba(252,252,250,0.95); backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+.logo { text-decoration: none; flex-shrink: 0; }
+.logo img { display: block; height: 72px; width: auto; max-width: 280px; }
+@media (max-width: 480px) { .logo img { height: 52px; max-width: 200px; } }
+nav ul { list-style: none; display: flex; gap: 32px; }
+nav a { font-size: 12.5px; letter-spacing: 0.06em; color: var(--ink-soft); text-decoration: none; transition: color 0.2s; }
+nav a:hover, nav a.active { color: var(--sage); }
+.btn-nav {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--sage); color: #fff;
+  font-size: 12.5px; font-weight: 500;
+  padding: 9px 18px; border-radius: var(--radius-sm);
+  text-decoration: none; white-space: nowrap;
+  transition: background 0.2s;
+}
+.btn-nav:hover { background: #6d8d6c; }
+/* HERO */
+.blog-hero {
+  padding: 72px 6vw 64px;
+  background: var(--cream);
+  text-align: center;
+}
+.eyebrow { display: inline-block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; color: var(--sage); }
+.blog-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(36px,5vw,60px);
+  font-weight: 300; line-height: 1.08;
+  margin: 16px 0 20px; color: var(--ink);
+}
+.blog-hero h1 em { font-style: italic; color: var(--sage-light); }
+.blog-hero p { font-size: 15.5px; color: var(--ink-soft); max-width: 520px; margin: 0 auto; line-height: 1.75; }
+/* POSTS GRID */
+.posts-section { padding: 72px 6vw; max-width: 1200px; margin: 0 auto; }
+.posts-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
+.post-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-md); overflow: hidden;
+  box-shadow: var(--shadow-sm); transition: box-shadow 0.25s, transform 0.25s;
+  text-decoration: none; color: inherit; display: flex; flex-direction: column;
+}
+.post-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+.post-img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; }
+.post-body { padding: 26px; flex: 1; display: flex; flex-direction: column; }
+.post-tag { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; color: var(--sage); margin-bottom: 10px; }
+.post-title { font-family: var(--font-display); font-size: 22px; font-weight: 400; line-height: 1.25; color: var(--ink); margin-bottom: 12px; }
+.post-excerpt { font-size: 13px; color: var(--ink-soft); line-height: 1.7; flex: 1; }
+.post-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border); }
+.post-date { font-size: 11px; color: var(--ink-muted); }
+.post-read { font-size: 11.5px; font-weight: 500; color: var(--sage); display: flex; align-items: center; gap: 4px; }
+/* CTA strip */
+.blog-cta {
+  background: var(--sage); padding: 72px 6vw;
+  text-align: center; color: #fff;
+}
+.blog-cta h2 { font-family: var(--font-display); font-size: clamp(28px,3.5vw,44px); font-weight: 300; margin-bottom: 16px; }
+.blog-cta p { font-size: 15px; color: rgba(255,255,255,0.75); max-width: 480px; margin: 0 auto 32px; line-height: 1.75; }
+.btn-white { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--sage); padding: 13px 28px; border-radius: var(--radius-sm); font-size: 13.5px; font-weight: 500; text-decoration: none; transition: background 0.2s; }
+.btn-white:hover { background: var(--sage-pale); }
+/* FOOTER */
+footer { background: var(--ink); padding: 48px 6vw 32px; color: rgba(255,255,255,0.45); }
+.footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; flex-wrap: wrap; margin-bottom: 36px; }
+.footer-brand-name { font-family: var(--font-display); font-size: 20px; font-weight: 300; color: #fff; margin-bottom: 4px; }
+.footer-brand-sub { font-size: 9.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage-light); margin-bottom: 12px; }
+.footer-brand-p { font-size: 12.5px; line-height: 1.7; max-width: 280px; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 24px; font-size: 11.5px; display: flex; justify-content: space-between; }
+@media (max-width: 900px) { .posts-grid { grid-template-columns: 1fr 1fr; } nav ul { display: none; } .btn-nav { display: none; } .hamburger { display: flex; } .mobile-nav { display: block; } }
+@media (max-width: 600px) { .posts-grid { grid-template-columns: 1fr; } }
+/* HAMBURGER */
+.hamburger { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 40px; height: 40px; background: none; border: none; cursor: pointer; padding: 4px; border-radius: 3px; transition: background 0.2s; z-index: 110; }
+.hamburger:hover { background: var(--sage-pale); }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; transform-origin: center; }
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.mobile-nav { display: none; position: fixed; top: 84px; left: 0; right: 0; background: rgba(252,252,250,0.98); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 99; transform: translateY(-8px); opacity: 0; pointer-events: none; transition: opacity 0.25s, transform 0.25s; }
+.mobile-nav.open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.mobile-nav ul { list-style: none; padding: 12px 0 8px; }
+.mobile-nav ul li a { display: flex; align-items: center; padding: 14px 6vw; font-size: 15px; font-weight: 400; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--border); transition: color 0.2s, background 0.2s; }
+.mobile-nav ul li:last-child a { border-bottom: none; }
+.mobile-nav ul li a:hover { color: var(--sage); background: var(--sage-pale); }
+.mobile-nav-cta { padding: 16px 6vw 20px; }
+.mobile-nav-cta a { display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--sage); color: #fff; border-radius: 3px; padding: 14px 20px; font-size: 14px; font-weight: 500; text-decoration: none; transition: background 0.2s; }
+.mobile-nav-cta a:hover { background: #6d8d6c; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Blog Roberta Marchon Nutricionista",
+  "description": "Artigos científicos sobre nutrição, emagrecimento, low carb, jejum intermitente e saúde.",
+  "url": "https://www.robertamarchon.com.br/blog/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Roberta Marchon Nutricionista",
+    "logo": {"@type": "ImageObject", "url": "https://www.robertamarchon.com.br/assets/logo.svg"}
+  },
+  "inLanguage": "pt-BR"
+}
+</script>
+</head>
+<body>
+
+<header>
+  <a href="../index.html" class="logo">
+    <img src="../assets/logo.svg" alt="Roberta Marchon Nutricionista" />
+  </a>
+  <nav>
+    <ul>
+      <li><a href="../index.html#servicos">Serviços</a></li>
+      <li><a href="../index.html#sobre">Sobre mim</a></li>
+      <li><a href="../index.html#como-funciona">Como funciona</a></li>
+      <li><a href="../index.html#depoimentos">Depoimentos</a></li>
+      <li><a href="index.html" class="active">Blog</a></li>
+      <li><a href="../index.html#contato">Contato</a></li>
+    </ul>
+  </nav>
+  <a href="https://wa.me/5521971008223" target="_blank" class="btn-nav">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Agendar consulta
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <ul>
+    <li><a href="../index.html#servicos" onclick="closeMenu()">Serviços</a></li>
+    <li><a href="../index.html#sobre" onclick="closeMenu()">Sobre mim</a></li>
+    <li><a href="../index.html#como-funciona" onclick="closeMenu()">Como funciona</a></li>
+    <li><a href="../index.html#depoimentos" onclick="closeMenu()">Depoimentos</a></li>
+    <li><a href="index.html">Blog</a></li>
+    <li><a href="../index.html#contato" onclick="closeMenu()">Contato</a></li>
+  </ul>
+  <div class="mobile-nav-cta">
+    <a href="https://wa.me/5521971008223" target="_blank">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Agendar consulta pelo WhatsApp
+    </a>
+  </div>
+</div>
+
+<div class="blog-hero">
+  <span class="eyebrow">Blog</span>
+  <h1>Nutrição baseada em<br><em>ciência e prática</em></h1>
+  <p>Artigos sobre alimentação, saúde, nutrição esportiva e bem-estar — conteúdo para ajudar você a fazer escolhas mais conscientes no dia a dia.</p>
+</div>
+
+<div class="posts-section">
+  <div class="posts-grid">
+
+    <a href="nutricao-esportiva.html" class="post-card">
+      <img src="../assets/esporte.png" alt="Nutrição Esportiva - halteres, vegetais e fita métrica" class="post-img" />
+      <div class="post-body">
+        <div class="post-tag">Nutrição Esportiva</div>
+        <h2 class="post-title">Nutrição esportiva: como a alimentação transforma seus resultados</h2>
+        <p class="post-excerpt">Descubra como carboidratos, proteínas, hidratação e suplementação inteligente podem melhorar desempenho, recuperação e composição corporal — com orientação baseada em evidências.</p>
+        <div class="post-footer">
+          <span class="post-date">Junho 2026</span>
+          <span class="post-read">Ler artigo →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="nutricao-idosos.html" class="post-card">
+      <img src="../assets/idosos.png" alt="Idosos se alimentando bem - nutrição na terceira idade" class="post-img" loading="lazy" />
+      <div class="post-body">
+        <div class="post-tag">Nutrição para Idosos</div>
+        <h2 class="post-title">Nutrição na terceira idade: cuidados essenciais para a saúde e bem-estar</h2>
+        <p class="post-excerpt">Com o envelhecimento, as necessidades nutricionais mudam. Entenda como adaptar a alimentação para manter energia, saúde óssea e qualidade de vida após os 60 anos.</p>
+        <div class="post-footer">
+          <span class="post-date">Junho 2026</span>
+          <span class="post-read">Ler artigo →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="reeducacao-alimentar.html" class="post-card">
+      <img src="../assets/reeducacao.png" alt="Reeducação alimentar - disciplina, foco e constância" class="post-img" loading="lazy" />
+      <div class="post-body">
+        <div class="post-tag">Comportamento Alimentar</div>
+        <h2 class="post-title">Reeducação alimentar sem sofrimento: por onde começar?</h2>
+        <p class="post-excerpt">Como criar uma relação saudável com a comida sem restrições severas — transformando hábitos de forma gradual, sustentável e com prazer.</p>
+        <div class="post-footer">
+          <span class="post-date">Junho 2026</span>
+          <span class="post-read">Ler artigo →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="mounjaro.html" class="post-card">
+      <img src="../assets/mounjaro.png" alt="Mounjaro (tirzepatida) - caneta injetora do medicamento" class="post-img" loading="lazy" />
+      <div class="post-body">
+        <div class="post-tag" style="color:#c0392b;">Farmacologia & Nutrição</div>
+        <h2 class="post-title">Mounjaro (Tirzepatida): o que a ciência diz sobre benefícios, riscos e o papel da nutrição</h2>
+        <p class="post-excerpt">Análise dos estudos SURMOUNT, mecanismo de ação dual GIP+GLP-1, perda de massa muscular, efeitos adversos e por que o acompanhamento nutricional é indispensável.</p>
+        <div class="post-footer">
+          <span class="post-date">Junho 2026</span>
+          <span class="post-read">Ler artigo →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="lowcarb.html" class="post-card">
+      <img src="../assets/lowcarb.png" alt="Dieta low carb - prato com frango, abacate, brócolis e salada" class="post-img" loading="lazy" />
+      <div class="post-body">
+        <div class="post-tag">Nutrição Clínica</div>
+        <h2 class="post-title">Dieta low carb: o que a ciência diz sobre eficácia, riscos e quando ela realmente funciona</h2>
+        <p class="post-excerpt">Do espectro cetogênico à low carb moderada, analisamos metanálises, o estudo DIETFITS, dados sobre diabetes tipo 2 e quem realmente se beneficia dessa abordagem.</p>
+        <div class="post-footer">
+          <span class="post-date">Junho 2026</span>
+          <span class="post-read">Ler artigo →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="jejum-intermitente.html" class="post-card">
+      <img src="../assets/jejum.png" alt="Jejum intermitente 16:8 - relógio em prato com talheres" class="post-img" loading="lazy" />
+      <div class="post-body">
+        <div class="post-tag">Nutrição Clínica</div>
+        <h2 class="post-title">Jejum intermitente: o que a ciência realmente comprova — e o que ainda é incerto</h2>
+        <p class="post-excerpt">Comparamos os protocolos 16:8, 5:2, ADF e OMAD com os dados reais dos ECRs, incluindo o TREAT Trial e metanálises recentes sobre perda de peso e risco cardiovascular.</p>
+        <div class="post-footer">
+          <span class="post-date">Junho 2026</span>
+          <span class="post-read">Ler artigo →</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<div class="blog-cta">
+  <h2>Quer um plano alimentar personalizado?</h2>
+  <p>Cada pessoa tem um metabolismo, uma rotina e objetivos únicos. Venha conversar com Roberta e descubra como a nutrição pode transformar a sua vida.</p>
+  <a href="https://wa.me/5521971008223" target="_blank" class="btn-white">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Agendar consulta pelo WhatsApp
+  </a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">Roberta Marchon</div>
+      <div class="footer-brand-sub">Nutricionista</div>
+      <p class="footer-brand-p">Nutricionista em Itaboraí com atendimento online para todo o Brasil. CRN 4 – 131.006-25.</p>
+    </div>
+    <div style="font-size:12.5px;line-height:2;">
+      <a href="../index.html" style="color:rgba(255,255,255,0.45);text-decoration:none;display:block;">← Voltar ao site</a>
+      <a href="nutricao-esportiva.html" style="color:rgba(255,255,255,0.45);text-decoration:none;display:block;">Nutrição Esportiva</a>
+      <a href="nutricao-idosos.html" style="color:rgba(255,255,255,0.45);text-decoration:none;display:block;">Nutrição para Idosos</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Roberta Marchon · Itaboraí, RJ</span>
+    <span style="color:rgba(255,255,255,0.28);">CRN 4 – 131.006-25</span>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  const btn = document.getElementById('hamburger');
+  const nav = document.getElementById('mobile-nav');
+  const isOpen = nav.classList.contains('open');
+  if (isOpen) { nav.classList.remove('open'); btn.classList.remove('open'); document.body.style.overflow = ''; }
+  else { nav.classList.add('open'); btn.classList.add('open'); document.body.style.overflow = 'hidden'; }
+}
+function closeMenu() {
+  document.getElementById('hamburger').classList.remove('open');
+  document.getElementById('mobile-nav').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('click', function(e) {
+  const nav = document.getElementById('mobile-nav');
+  const btn = document.getElementById('hamburger');
+  if (nav && nav.classList.contains('open') && !nav.contains(e.target) && !btn.contains(e.target)) { closeMenu(); }
+});
+</script>
+</body>
+</html>

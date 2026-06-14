@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="80" viewBox="0 0 600 80" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Roberta Marchon Nutricionista</title>
+<desc>Logo horizontal com folha estilizada e tipografia elegante</desc>
+
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;display=swap');
+    .ln { font-family: "Cormorant Garamond", Georgia, serif; font-size: 36px; font-weight: 300; fill: #2f2f2f; letter-spacing: 0.05em; }
+    .li { font-family: "Cormorant Garamond", Georgia, serif; font-size: 36px; font-weight: 300; font-style: italic; fill: #7c9b7a; letter-spacing: 0.05em; }
+    .lc { font-family: "Inter", Arial, sans-serif; font-size: 9px; font-weight: 400; fill: #7c9b7a; letter-spacing: 0.24em; }
+  </style>
+</defs>
+
+<!-- LEAF ICON — 64px tall, anchored top-left -->
+<g transform="translate(6, 4) scale(0.47)">
+  <path fill="#7c9b7a" opacity="0.92" d="M52,10 C80,8 105,25 108,58 C111,90 90,118 60,125 C38,130 18,118 10,98 C2,78 8,52 20,35 C30,20 40,12 52,10 Z"/>
+  <path fill="#9ab398" opacity="0.55" d="M52,10 C65,12 82,28 84,55 C86,78 72,102 55,112 C48,104 44,88 46,68 C48,48 50,28 52,10 Z"/>
+  <path fill="#c8d8c7" opacity="0.8" d="M90,18 C105,14 118,22 120,38 C122,52 112,64 100,66 C92,60 88,48 88,36 C88,28 88,22 90,18 Z"/>
+  <path d="M52,125 C52,140 54,150 56,160" stroke="#5a7a58" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M52,22 C52,55 52,90 54,118" stroke="#5a7a58" stroke-width="1" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <path d="M46,45 C34,50 22,52 14,55" stroke="#5a7a58" stroke-width="0.8" fill="none" opacity="0.35" stroke-linecap="round"/>
+  <path d="M48,68 C36,71 24,72 16,74" stroke="#5a7a58" stroke-width="0.8" fill="none" opacity="0.35" stroke-linecap="round"/>
+  <path d="M56,45 C68,48 78,48 86,46" stroke="#5a7a58" stroke-width="0.8" fill="none" opacity="0.35" stroke-linecap="round"/>
+  <path d="M56,68 C67,70 76,68 84,64" stroke="#5a7a58" stroke-width="0.8" fill="none" opacity="0.35" stroke-linecap="round"/>
+</g>
+
+<!-- DIVIDER -->
+<line x1="82" y1="12" x2="82" y2="68" stroke="#d4dfd3" stroke-width="0.8"/>
+
+<!-- ROBERTA MARCHON — numa linha, bem espaçado -->
+<text y="46">
+  <tspan x="96" class="ln">Roberta&#160;</tspan><tspan class="li">Marchon</tspan>
+</text>
+
+<!-- NUTRICIONISTA tag -->
+<text x="97" y="64" class="lc">NUTRICIONISTA  ·  CRN 4 – 131.006-25</text>
+
+</svg>
