@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SK097MMHLZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SK097MMHLZ');
-</script>
-  
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- ===== SEO PRINCIPAL ===== -->
-<title>Roberta Marchon | Nutricionista em Itaboraí e Online | Emagrecimento, Nutrição Clínica e Esportiva</title>
-<meta name="description" content="Nutricionista em Itaboraí (RJ) com atendimento online para todo o Brasil. Especializada em emagrecimento saudável, reeducação alimentar, nutrição esportiva, nutrição para idosos e nutrição clínica. CRN 4 – 131.006-25. Agende sua consulta pelo WhatsApp." />
+<title>Nutricionista em Itaboraí e Online | Roberta Marchon</title>
+<meta name="description" content="Nutricionista em Itaboraí com atendimento online para todo o Brasil. Emagrecimento saudável, nutrição clínica e esportiva. CRN 4 – 131.006-25." />
 <meta name="keywords" content="nutricionista itaboraí, nutricionista online, emagrecimento saudável, reeducação alimentar, nutrição clínica, nutrição esportiva, nutricionista RJ, nutricionista niterói, nutricionista são gonçalo, nutricionista maricá, nutricionista rio de janeiro, nutricionista online brasil, dieta para emagrecer, plano alimentar, perda de peso, ganho de massa muscular, nutrição para idosos, nutricionista diabetes, nutricionista hipertensão, consulta nutricionista online, nutricionista particular, nutricionista crn, low carb nutricionista, jejum intermitente nutricionista, mounjaro nutricionista, tirzepatida nutricionista" />
 <meta name="author" content="Roberta Marchon" />
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -28,8 +17,8 @@
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="pt_BR" />
 <meta property="og:site_name" content="Roberta Marchon Nutricionista" />
-<meta property="og:title" content="Roberta Marchon | Nutricionista em Itaboraí e Online" />
-<meta property="og:description" content="Emagrecimento saudável, reeducação alimentar e nutrição clínica com atendimento presencial em Itaboraí e online para todo o Brasil. Agende sua consulta." />
+<meta property="og:title" content="Nutricionista em Itaboraí e Online | Roberta Marchon" />
+<meta property="og:description" content="Nutricionista em Itaboraí com atendimento online para todo o Brasil. Emagrecimento saudável, nutrição clínica e esportiva. CRN 4 – 131.006-25." />
 <meta property="og:url" content="https://www.robertamarchon.com.br/" />
 <meta property="og:image" content="https://www.robertamarchon.com.br/assets/hero.png" />
 <meta property="og:image:width" content="1200" />
@@ -37,8 +26,8 @@
 
 <!-- ===== TWITTER CARD ===== -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Roberta Marchon | Nutricionista em Itaboraí e Online" />
-<meta name="twitter:description" content="Emagrecimento saudável, nutrição clínica e esportiva. Atendimento presencial em Itaboraí/RJ e online para todo o Brasil." />
+<meta name="twitter:title" content="Nutricionista em Itaboraí e Online | Roberta Marchon" />
+<meta name="twitter:description" content="Nutricionista em Itaboraí com atendimento online para todo o Brasil. Emagrecimento saudável, nutrição clínica e esportiva. CRN 4 – 131.006-25." />
 <meta name="twitter:image" content="https://www.robertamarchon.com.br/assets/hero.png" />
 
 <!-- ===== SCHEMA.ORG — dados estruturados para Google ===== -->
@@ -220,6 +209,43 @@ nav a {
   transition: color 0.2s;
 }
 nav a:hover { color: var(--sage); }
+
+/* ── DROPDOWN MENU ── */
+.nav-dropdown { position: relative; }
+.nav-dropdown > a::after {
+  content: ' ▾'; font-size: 9px; opacity: 0.6;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute; top: calc(100% + 14px); left: -16px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  min-width: 260px;
+  padding: 8px 0;
+  z-index: 200;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.dropdown-menu a:hover { background: var(--sage-pale); color: var(--sage); }
+.dropdown-menu .dd-divider {
+  height: 1px; background: var(--border); margin: 6px 0;
+}
+.dropdown-menu .dd-label {
+  padding: 6px 20px 4px;
+  font-size: 10px; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--ink-muted);
+  font-weight: 500;
+}
+.nav-dropdown:hover .dropdown-menu { display: block; }
 .btn-nav {
   display: inline-flex; align-items: center; gap: 7px;
   background: var(--sage); color: #fff;
@@ -819,7 +845,22 @@ footer {
   </a>
   <nav>
     <ul>
-      <li><a href="#servicos">Serviços</a></li>
+      <li class="nav-dropdown">
+        <a href="#servicos">Serviços</a>
+        <div class="dropdown-menu">
+          <div class="dd-label">Especialidades</div>
+          <a href="./servicos/emagrecimento-saudavel.html">⚖️ Emagrecimento saudável</a>
+          <a href="./servicos/lipedema.html">🦵 Lipedema</a>
+          <a href="./servicos/nutricao-esportiva.html">💪 Nutrição esportiva</a>
+          <a href="./servicos/nutricao-idosos.html">👴 Nutrição para idosos</a>
+          <a href="./servicos/nutricao-mounjaro-glp1.html">💊 Mounjaro e GLP-1</a>
+          <div class="dd-divider"></div>
+          <div class="dd-label">Modalidades</div>
+          <a href="./servicos/nutricionista-online.html">🌐 Consulta online</a>
+          <a href="./servicos/nutricionista-itaborai.html">📍 Presencial em Itaboraí</a>
+          <a href="./servicos/nutricionista-online-exterior.html">✈️ Brasileiros no exterior</a>
+        </div>
+      </li>
       <li><a href="#sobre">Sobre mim</a></li>
       <li><a href="#como-funciona">Como funciona</a></li>
       <li><a href="#depoimentos">Depoimentos</a></li>
@@ -841,6 +882,16 @@ footer {
 <div class="mobile-nav" id="mobile-nav">
   <ul>
     <li><a href="#servicos" onclick="closeMenu()">Serviços</a></li>
+    <li style="padding-left:16px;border-left:2px solid var(--sage-pale);margin:4px 0 4px 16px;">
+      <a href="./servicos/emagrecimento-saudavel.html" style="font-size:13px;color:var(--ink-muted);">⚖️ Emagrecimento</a></li>
+    <li style="padding-left:16px;border-left:2px solid var(--sage-pale);margin:4px 0 4px 16px;">
+      <a href="./servicos/lipedema.html" style="font-size:13px;color:var(--ink-muted);">🦵 Lipedema</a></li>
+    <li style="padding-left:16px;border-left:2px solid var(--sage-pale);margin:4px 0 4px 16px;">
+      <a href="./servicos/nutricao-esportiva.html" style="font-size:13px;color:var(--ink-muted);">💪 Nutrição esportiva</a></li>
+    <li style="padding-left:16px;border-left:2px solid var(--sage-pale);margin:4px 0 4px 16px;">
+      <a href="./servicos/nutricao-mounjaro-glp1.html" style="font-size:13px;color:var(--ink-muted);">💊 Mounjaro / GLP-1</a></li>
+    <li style="padding-left:16px;border-left:2px solid var(--sage-pale);margin:4px 0 12px 16px;">
+      <a href="./servicos/nutricionista-online-exterior.html" style="font-size:13px;color:var(--ink-muted);">✈️ Brasileiros no exterior</a></li>
     <li><a href="#sobre" onclick="closeMenu()">Sobre mim</a></li>
     <li><a href="#como-funciona" onclick="closeMenu()">Como funciona</a></li>
     <li><a href="#depoimentos" onclick="closeMenu()">Depoimentos</a></li>
@@ -910,40 +961,51 @@ footer {
         <h2 class="section-h2" style="margin-top: 14px;">Especialidades que<br><em>transformam</em> resultados</h2>
       </div>
       <p class="section-desc">
-        Cada atendimento é único porque você é único. Trabalho com avaliação completa, plano individualizado e acompanhamento contínuo.
+        Cada atendimento é único porque você é única. Trabalho com avaliação completa, plano individualizado e acompanhamento contínuo.
       </p>
     </div>
     <div class="services-grid">
-      <div class="service-card">
+      <a href="./servicos/emagrecimento-saudavel.html" class="service-card" style="text-decoration:none;display:block;">
         <div class="service-icon">⚖️</div>
         <div class="service-title">Emagrecimento saudável</div>
         <p class="service-desc">Perda de peso sustentável, sem sofrimento nem dietas restritivas. Reeducação alimentar que cabe na sua rotina real.</p>
-      </div>
-      <div class="service-card">
+        <span style="font-size:12px;color:var(--sage);font-weight:500;margin-top:12px;display:block;">Saiba mais →</span>
+      </a>
+      <a href="./servicos/nutricao-esportiva.html" class="service-card" style="text-decoration:none;display:block;">
         <div class="service-icon">💪</div>
-        <div class="service-title">Ganho de massa magra</div>
+        <div class="service-title">Nutrição esportiva</div>
         <p class="service-desc">Estratégia nutricional para quem treina e quer ver resultado. Proteína, timing e composição corporal certos.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🫀</div>
-        <div class="service-title">Saúde intestinal e hormonal</div>
-        <p class="service-desc">Microbiota, inflamação e equilíbrio hormonal pela alimentação. Seu intestino como chave da sua saúde.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">📋</div>
-        <div class="service-title">Planos alimentares personalizados</div>
-        <p class="service-desc">Cardápios adaptados ao seu gosto, rotina, orçamento e objetivos. Prático, gostoso e baseado em ciência.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">⚡</div>
-        <div class="service-title">Mais energia e disposição</div>
-        <p class="service-desc">Nutrição para quem quer acordar com pique, ter foco no trabalho e dormir bem. Qualidade de vida integral.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🏥</div>
-        <div class="service-title">Nutrição clínica</div>
-        <p class="service-desc">Atendimento a pacientes com diabetes, hipertensão, dislipidemia e outras condições clínicas. Experiência hospitalar.</p>
-      </div>
+        <span style="font-size:12px;color:var(--sage);font-weight:500;margin-top:12px;display:block;">Saiba mais →</span>
+      </a>
+      <a href="./servicos/lipedema.html" class="service-card" style="text-decoration:none;display:block;">
+        <div class="service-icon">🦵</div>
+        <div class="service-title">Lipedema</div>
+        <p class="service-desc">Protocolo anti-inflamatório especializado para lipedema. Controle do edema, redução da dor e emagrecimento estratégico.</p>
+        <span style="font-size:12px;color:var(--sage);font-weight:500;margin-top:12px;display:block;">Saiba mais →</span>
+      </a>
+      <a href="./servicos/nutricao-mounjaro-glp1.html" class="service-card" style="text-decoration:none;display:block;">
+        <div class="service-icon">💊</div>
+        <div class="service-title">Mounjaro e GLP-1</div>
+        <p class="service-desc">Acompanhamento nutricional para quem usa Mounjaro, Ozempic ou Wegovy. Preserve músculo e potencialize os resultados.</p>
+        <span style="font-size:12px;color:var(--sage);font-weight:500;margin-top:12px;display:block;">Saiba mais →</span>
+      </a>
+      <a href="./servicos/nutricao-idosos.html" class="service-card" style="text-decoration:none;display:block;">
+        <div class="service-icon">👴</div>
+        <div class="service-title">Nutrição para idosos</div>
+        <p class="service-desc">Prevenção de sarcopenia, saúde óssea e controle de doenças crônicas. Qualidade de vida na terceira idade.</p>
+        <span style="font-size:12px;color:var(--sage);font-weight:500;margin-top:12px;display:block;">Saiba mais →</span>
+      </a>
+      <a href="./servicos/nutricionista-online.html" class="service-card" style="text-decoration:none;display:block;">
+        <div class="service-icon">🌐</div>
+        <div class="service-title">Consulta online</div>
+        <p class="service-desc">Atendimento completo por videochamada para qualquer cidade do Brasil e para brasileiros no exterior. Plano em 48h.</p>
+        <span style="font-size:12px;color:var(--sage);font-weight:500;margin-top:12px;display:block;">Saiba mais →</span>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <a href="./servicos/nutricionista-online-exterior.html" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:13px;color:var(--ink-soft);text-decoration:none;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--sage)';this.style.color='var(--sage)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--ink-soft)'">
+        ✈️ Atendo brasileiros no exterior (EUA, Europa e mundo) — saiba mais
+      </a>
     </div>
   </div>
 </section>
